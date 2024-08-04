@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   //base: "/nowa-ts/preview/",  // Use base path for while deploying the project the SSR.
   plugins: [react()],
+  base: "/CinepolisWebApp",
   define: {
     'process.env': {},
   },
