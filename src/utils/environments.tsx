@@ -1,0 +1,1 @@
+export const APIURL = 'https://cinepolisapipm2.azurewebsites.net/';

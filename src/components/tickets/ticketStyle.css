@@ -1,0 +1,52 @@
+/* src/Ticket.css */
+.ticket-container {
+  display: flex;
+  border: 2px dashed #000;
+  width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.ticket-left, .ticket-right {
+  padding: 10px;
+}
+
+.ticket-left {
+  background-color: #1C0038;
+  color: #fff;
+  text-align: center;
+  flex: 1;
+  border-right: 2px dashed #000;
+}
+
+.ticket-right {
+  background-color: #f4f4f4;
+  flex: 2;
+  text-align: left;
+}
+
+.text-large {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-huge {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.text-medium {
+  font-size: 16px;
+}
+
+.cinepolis-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cinepolis-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
