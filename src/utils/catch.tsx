@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 export const Catch = (error: any) => {
     console.warn("error", error);
     if (error.response && error.response.status === 401) {
-        window.location.href = `${process.env.PUBLIC_URL}`;
+        window.location.href = ``;
     }
 
     if (error.response.status === 401) {
