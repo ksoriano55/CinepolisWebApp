@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path={`${import.meta.env.BASE_URL}`} element={<Authenticationlayout />}>
             <Route path='*' element={<Error500 />} />
             <Route index path={`${import.meta.env.BASE_URL}`} element={<Login />} />
-            <Route index path={`${import.meta.env.BASE_URL}/tickets/:id`} element={<Tickets />} />
+            <Route index path={`${import.meta.env.BASE_URL}tickets/:id`} element={<Tickets />} />
             {/* other authentication */}
             <Route path={`${import.meta.env.BASE_URL}pages/authentication/500error`} element={<Error500 />} />
           </Route>
