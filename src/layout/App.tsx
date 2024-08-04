@@ -10,8 +10,8 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import esMessages from "devextreme/localization/messages/es.json";
 import { locale, loadMessages } from "devextreme/localization";
 // import 'devextreme/dist/css/dx.material.purple.light.css';
-// import 'devextreme/dist/css/dx.fluent.saas.light.css';
-import 'devextreme/dist/css/dx.fluent.purple-themes.css';
+import 'devextreme/dist/css/dx.fluent.saas.light.css';
+// import 'devextreme/dist/css/dx.fluent.purple-themes.css';
 
 interface ComponentProps { }
 
