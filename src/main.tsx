@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { /*BrowserRouter,*/ HashRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import "./index.scss";
 import { Routingdata } from './common/routingdata';
@@ -15,7 +15,7 @@ import Scrolltotop from './Scrolltotop';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Fragment>
     <HelmetProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <HashRouter /*basename={import.meta.env.BASE_URL}*/>
         <Scrolltotop />
         <Routes>
           {/* authentication layout */}
@@ -34,7 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           </Route>
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   </Fragment>
 );
