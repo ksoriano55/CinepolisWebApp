@@ -42,22 +42,22 @@ export const MENUITEMS: Menuitemtype[] = [
   { menutitle: "GENERAL" },
   {
     title: "Peliculas", icon: filmsvg, type: "sub", active: false, selected: false, dirchange: false, children: [
-      { path: `${import.meta.env.BASE_URL}movies`, type: "link", active: false, selected: false, dirchange: false, title: "Peliculas" },
+      { path: "movies", type: "link", active: false, selected: false, dirchange: false, title: "Peliculas" },
     ],
   },
   {
     title: "Productos", icon: shopsvg, type: "sub", active: false, selected: false, dirchange: false, children: [
-      { path: `${import.meta.env.BASE_URL}products`, type: "link", active: false, selected: false, dirchange: false, title: "Productos" },
+      { path: "products", type: "link", active: false, selected: false, dirchange: false, title: "Productos" },
     ],
   },
   {
     title: "Horarios", icon: pagessvg, type: "sub", active: false, selected: false, dirchange: false, children: [
-      { path: `${import.meta.env.BASE_URL}schedules`, type: "link", active: false, selected: false, dirchange: false, title: "Horarios" },
+      { path: "schedules", type: "link", active: false, selected: false, dirchange: false, title: "Horarios" },
     ],
   },
   {
     title: "Precios", icon: moneysvg, type: "sub", active: false, selected: false, dirchange: false, children: [
-      { path: `${import.meta.env.BASE_URL}prices`, type: "link", active: false, selected: false, dirchange: false, title: "Precios" },
+      { path: "prices", type: "link", active: false, selected: false, dirchange: false, title: "Precios" },
     ],
   },
   {
@@ -65,7 +65,7 @@ export const MENUITEMS: Menuitemtype[] = [
   },
   {
     title: "Salas", icon: roomsvg, type: "sub", active: false, selected: false, dirchange: false, children: [
-      { path: `${import.meta.env.BASE_URL}rooms`, type: "link", active: false, selected: false, dirchange: false, title: "Salas" },
+      { path: "rooms", type: "link", active: false, selected: false, dirchange: false, title: "Salas" },
     ],
   },
 ];

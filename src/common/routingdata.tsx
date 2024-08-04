@@ -7,11 +7,11 @@ import Prices from '../components/prices/containers/prices';
 
 export const Routingdata = [
   //Pages
-  { path: `${import.meta.env.BASE_URL}movies`, element: <Movies /> },
-  { path: `${import.meta.env.BASE_URL}products`, element: <Products /> },
-  { path: `${import.meta.env.BASE_URL}rooms`, element: <Rooms /> },
-  { path: `${import.meta.env.BASE_URL}schedules`, element: <Schedules /> },
-  { path: `${import.meta.env.BASE_URL}prices`, element: <Prices /> },
+  { path: `/movies`, element: <Movies /> },
+  { path: `/products`, element: <Products /> },
+  { path: `/rooms`, element: <Rooms /> },
+  { path: `/schedules`, element: <Schedules /> },
+  { path: `/prices`, element: <Prices /> },
 ];
 
 export const Sidebarcomponents = [

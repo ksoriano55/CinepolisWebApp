@@ -15,19 +15,19 @@ import Scrolltotop from './Scrolltotop';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Fragment>
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Scrolltotop />
         <Routes>
           {/* authentication layout */}
-          <Route path={`${import.meta.env.BASE_URL}`} element={<Authenticationlayout />}>
-            <Route path='*' element={<Error500 />} />
-            <Route index path={`${import.meta.env.BASE_URL}`} element={<Login />} />
-            <Route index path={`${import.meta.env.BASE_URL}tickets/:id`} element={<Tickets />} />
+          <Route path={"/"} element={<Authenticationlayout />}>
+            <Route path="*" element={<Error500 />} />
+            <Route index path={""} element={<Login />} />
+            <Route path="tickets/:id" element={<Tickets />} />
             {/* other authentication */}
-            <Route path={`${import.meta.env.BASE_URL}pages/authentication/500error`} element={<Error500 />} />
+            <Route path={"pages/authentication/500error"} element={<Error500 />} />
           </Route>
           {/* main layout */}
-          <Route path={`${import.meta.env.BASE_URL}`} element={<App />} >
+          <Route path={"/"} element={<App />} >
             {Routingdata.map((idx) => (
               <Route path={idx.path} element={idx.element} key={Math.random()} />
             ))}

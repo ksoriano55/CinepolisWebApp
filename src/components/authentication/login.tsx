@@ -54,7 +54,7 @@ const Signin: FC<ComponentProps> = () => {
                                                         <div className="form-group">
                                                             <label>Contraseña</label> 
                                                             <input className="form-control" placeholder="Ingrese su contraseña" type="password" />
-                                                        </div><Link to={`${import.meta.env.BASE_URL}movies`} className="btn btn-primary btn-block">Ingresar</Link>
+                                                        </div><Link to={"movies"} className="btn btn-primary btn-block">Ingresar</Link>
                                                     </form>
                                                 </div>
                                             </div>

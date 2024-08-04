@@ -282,7 +282,7 @@ const Header: FC<ComponentProps> = ({ ThemeChanger }: any) => {
             {/* logo */}
             <div className="header-element">
               <div className="horizontal-logo">
-                <Link to={`${import.meta.env.BASE_URL}dashboard/dashboard/`} className="header-logo">
+                <Link to={"dashboard/dashboard/"} className="header-logo">
                   <img src={imagesData('desktoplogo')} alt="logo" className="desktop-logo" />
                   <img src={imagesData('togglelogo')} alt="logo" className="toggle-logo" />
                   <img src={imagesData('desktopdark')} alt="logo" className="desktop-dark" />
@@ -368,7 +368,7 @@ const Header: FC<ComponentProps> = ({ ThemeChanger }: any) => {
                 </div>
               </Dropdown.Toggle>
               <Dropdown.Menu as='ul' className="main-header-dropdown pt-0 overflow-hidden header-profile-dropdown" aria-labelledby="mainHeaderProfile" align='end'>
-                <Link to={`${import.meta.env.BASE_URL}`} className='dropdown-item d-flex'><i className="far fa-arrow-alt-circle-left fs-16 me-2 op-7"></i>Sign Out</Link>
+                <Link to={""} className='dropdown-item d-flex'><i className="far fa-arrow-alt-circle-left fs-16 me-2 op-7"></i>Sign Out</Link>
               </Dropdown.Menu>
             </Dropdown>
 
