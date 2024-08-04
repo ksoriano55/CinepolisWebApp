@@ -14,11 +14,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Especificar explícitamente la versión de Node.js
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install # Usar run para instalar dependencias, o mantener la acción bahmutov/npm-install
 
       - name: Build project
         run: npm run build
@@ -36,6 +38,14 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Especificar explícitamente la versión de Node.js
+
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
