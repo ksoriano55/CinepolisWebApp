@@ -5,7 +5,7 @@ import { Catch } from '../utils/catch';
 export const getTickets = async (id: number) => {
     try {
         const request = await axios.get(`${APIURL}api/Ventas/VentaById?ventaId=${id}`);
-        return request.data.data;
+        return request.data;
     } catch (error: any) {
         Catch(error);
     }
